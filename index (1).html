@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRL Micro Audit — The Right Lifestyle</title>
+<meta name="description" content="A 60-minute analysis of your business — customer replies, lead handling, daily workflows — plus a prioritized automation roadmap. $35 / PKR 9,900, one-time. By TRL — The Right Lifestyle.">
+<link rel="canonical" href="https://therightlifestyle.com/micro-audit/">
+
+<!-- Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="TRL Micro Audit — The Right Lifestyle">
+<meta property="og:description" content="60-minute business analysis + prioritized automation roadmap. $35 / PKR 9,900, one-time. No fake metrics. No obligation.">
+<meta property="og:url" content="https://therightlifestyle.com/micro-audit/">
+<!-- og:image intentionally omitted until a real TRL brand asset exists — no placeholders, no stock imagery -->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0b0d'/%3E%3Ctext x='32' y='45' font-family='Arial, sans-serif' font-size='34' font-weight='bold' fill='%233b82f6' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+
+<!-- ══════════════════════════════════════════════════════════════
+     TRL CONTACT CONFIG — THE ONLY PLACE YOU EDIT CONTACT DETAILS
+     • whatsappNumber: international format, digits only, e.g. "923XXXXXXXXX"
+       (no "+", no spaces). Leave "" until you're ready — the page then
+       routes all contact buttons to the email below. No dead links, ever.
+     • email: must be a mailbox you actually check before going live.
+     ══════════════════════════════════════════════════════════════ -->
+<script>
+  const TRL_CONTACT = {
+    whatsappNumber: "923190091457",
+    email: "rashidmuhammadamir@gmail.com",
+    whatsappMessage: "Hi, I want to book a TRL Micro Audit."
+  };
+</script>
+
+<style>
+  :root{
+    --bg:#0a0b0d;
+    --panel:#14161a;
+    --panel-2:#191c21;
+    --line:#262a31;
+    --text:#f5f6f8;
+    --muted:#9aa3ad;
+    --blue:#3b82f6;
+    --blue-deep:#2563eb;
+    --blue-darker:#1d4ed8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+
+  a:focus-visible,summary:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px;}
+
+  /* Nav */
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(10,11,13,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;}
+  .logo{display:flex;align-items:baseline;gap:10px;text-decoration:none;}
+  .logo .mark{font-size:20px;font-weight:800;letter-spacing:.12em;color:var(--text);}
+  .logo .mark span{color:var(--blue);}
+  .logo .sub{font-size:11px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:600;font-size:15px;
+    padding:12px 26px;border-radius:10px;transition:background .15s ease,border-color .15s ease;cursor:pointer;border:none;
+  }
+  .btn-primary{background:var(--blue-deep);color:#fff;}
+  .btn-primary:hover{background:var(--blue-darker);}
+  .btn-ghost{border:1px solid var(--line);color:var(--text);}
+  .btn-ghost:hover{border-color:var(--blue);color:var(--blue);}
+  .btn-sm{padding:9px 18px;font-size:14px;}
+
+  /* Hero — flat, calm, no glow effects */
+  header{padding:96px 0 80px;border-bottom:1px solid var(--line);}
+  .eyebrow{
+    display:inline-block;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--blue);border:1px solid rgba(59,130,246,.35);border-radius:999px;
+    padding:7px 16px;margin-bottom:28px;
+  }
+  h1{font-size:clamp(34px,5.4vw,58px);line-height:1.12;font-weight:800;letter-spacing:-.02em;max-width:760px;}
+  h1 .accent{color:var(--blue);}
+  .lede{margin-top:22px;font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:640px;}
+  .hero-cta{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+  .price-line{margin-top:26px;font-size:15px;color:var(--muted);}
+  .price-line strong{color:var(--text);font-size:20px;font-weight:700;}
+  .price-line .pk{color:var(--muted);}
+
+  /* Sections */
+  section{padding:76px 0;border-bottom:1px solid var(--line);}
+  .sec-label{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);margin-bottom:14px;}
+  h2{font-size:clamp(26px,3.4vw,36px);font-weight:800;letter-spacing:-.015em;margin-bottom:14px;}
+  .sec-sub{color:var(--muted);max-width:620px;margin-bottom:44px;font-size:16px;}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 24px;}
+  .card .n{
+    width:34px;height:34px;border-radius:9px;background:rgba(59,130,246,.12);
+    color:var(--blue);font-weight:800;font-size:15px;
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+  }
+  .card h3{font-size:17px;font-weight:700;margin-bottom:8px;}
+  .card p{font-size:14.5px;color:var(--muted);}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;}
+  .step{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px 24px;}
+  .step .num{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px;}
+  .step h3{font-size:17px;font-weight:700;margin-bottom:8px;}
+  .step p{font-size:14.5px;color:var(--muted);}
+
+  /* During / After panels */
+  .duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;max-width:760px;margin:0 auto 44px;}
+  .duo .card ul{list-style:none;margin-top:14px;}
+  .duo .card li{padding:6px 0;font-size:14.5px;color:var(--muted);display:flex;gap:10px;align-items:flex-start;}
+  .duo .card li::before{content:"—";color:var(--blue);flex-shrink:0;}
+  .duo .card .panel-tag{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);}
+  .duo .card h3{margin-top:8px;}
+  .duo-note{max-width:760px;margin:-26px auto 44px;font-size:13.5px;color:#5a626d;text-align:center;}
+
+  /* Pricing card */
+  .offer{
+    background:linear-gradient(180deg,var(--panel-2),var(--panel));
+    border:1px solid rgba(59,130,246,.4);border-radius:18px;
+    padding:44px 40px;max-width:640px;margin:0 auto;text-align:left;
+  }
+  .offer .tag{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;}
+  .offer .price{font-size:44px;font-weight:800;letter-spacing:-.02em;}
+  .offer .price small{font-size:16px;color:var(--muted);font-weight:500;letter-spacing:0;}
+  .offer ul{list-style:none;margin:26px 0 32px;}
+  .offer li{padding:9px 0;font-size:15.5px;color:var(--text);display:flex;gap:12px;align-items:flex-start;}
+  .offer li::before{content:"✓";color:var(--blue);font-weight:800;flex-shrink:0;}
+  .offer li.dim{color:var(--muted);}
+  .offer li.dim::before{content:"✕";color:#5a626d;}
+  .center{text-align:center;}
+  .delivered{margin-top:22px;font-size:14px;color:var(--muted);max-width:640px;margin-left:auto;margin-right:auto;}
+  .delivered strong{color:var(--text);}
+
+  /* Founder note */
+  .founder{
+    background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.3);
+    border-radius:14px;padding:26px 28px;max-width:640px;margin:26px auto 0;
+    font-size:15px;color:var(--text);
+  }
+  .founder strong{color:var(--blue);}
+
+  /* FAQ */
+  .faq{max-width:720px;margin:0 auto;}
+  details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin-bottom:12px;}
+  summary{
+    font-weight:700;font-size:16px;cursor:pointer;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";color:var(--blue);font-size:22px;font-weight:400;flex-shrink:0;}
+  details[open] summary::after{content:"–";}
+  details p{margin-top:14px;font-size:15px;color:var(--muted);}
+
+  /* Footer */
+  footer{padding:56px 0 64px;}
+  .foot-grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;}
+  .foot-brand p{color:var(--muted);font-size:14px;max-width:320px;margin-top:10px;}
+  .foot-contact{font-size:14.5px;color:var(--muted);}
+  .foot-contact a{color:var(--text);text-decoration:none;display:block;padding:3px 0;}
+  .foot-contact a:hover{color:var(--blue);}
+  .legal{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:#5a626d;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+
+  @media (max-width:640px){
+    header{padding:64px 0 56px;}
+    section{padding:56px 0;}
+    .offer{padding:34px 26px;}
+    .logo .sub{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class="logo" href="#" aria-label="TRL — The Right Lifestyle, home">
+      <div class="mark">T<span>R</span>L</div>
+      <div class="sub">The Right Lifestyle</div>
+    </a>
+    <a class="btn btn-primary btn-sm" data-cta href="/cdn-cgi/l/email-protection#057764766d6c6168706d646868646164686c77456268646c692b666a683a7670676f60667138515749203735486c66776a2037354470616c71203735676a6a6e6c6b62">Request an Audit</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">TRL Micro Audit · 60-minute business analysis</div>
+    <h1>See where AI can give your business <span class="accent">its time back.</span></h1>
+    <p class="lede">The TRL Micro Audit is a 60-minute analysis of your business — your customer replies, lead handling, and daily workflows — followed by a written, prioritized roadmap of the automation opportunities worth pursuing first.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" data-cta href="/cdn-cgi/l/email-protection#ef9d8e9c87868b829a878e82828e8b8e82869daf88828e8683c18c8082d09c9a8d858a8c9bd2bbbda3cadddfa2868c9d80cadddfae9a8b869bcadddf8d808084868188">Request the Micro Audit</a>
+      <a class="btn btn-ghost" href="#how">How it works</a>
+    </div>
+    <p class="price-line"><strong>$35</strong> <span class="pk">/ PKR 9,900 — one-time fee, no obligation to buy anything further</span></p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-label">What you get</div>
+    <h2>Sixty minutes. Zero fluff. A real map.</h2>
+    <p class="sec-sub">This is a working session, not a pitch. You leave with specifics about your own business — and the roadmap stays yours either way.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="n">1</div>
+        <h3>Workflow Analysis</h3>
+        <p>A structured 60-minute walkthrough of how your business actually runs day to day — where hours are being burned on repetitive work.</p>
+      </div>
+      <div class="card">
+        <div class="n">2</div>
+        <h3>Bottleneck Identification</h3>
+        <p>The places where businesses commonly lose time and leads — slow replies, missed follow-ups, manual tasks — and which of them actually apply to yours.</p>
+      </div>
+      <div class="card">
+        <div class="n">3</div>
+        <h3>Automation Roadmap</h3>
+        <p>A prioritized plan of what to automate first, what it would take, and the potential time, efficiency, and business impact of each opportunity.</p>
+      </div>
+      <div class="card">
+        <div class="n">4</div>
+        <h3>Quick Wins</h3>
+        <p>Immediate, practical improvements you can apply right away — even if you never buy anything else from anyone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-label">How it works</div>
+    <h2>Three steps. One hour. Done.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">Step 01</div>
+        <h3>Request your slot</h3>
+        <p>Message TRL on WhatsApp or email. Pick a time for a 60-minute call — phone or video, whichever you prefer.</p>
+      </div>
+      <div class="step">
+        <div class="num">Step 02</div>
+        <h3>The analysis</h3>
+        <p>We review your workflow, customer and lead handling, follow-up process, repetitive work, and current tools — and identify where automation could realistically help.</p>
+      </div>
+      <div class="step">
+        <div class="num">Step 03</div>
+        <h3>Your roadmap</h3>
+        <p>You receive a written summary: prioritized opportunities, recommended first actions, and quick wins — with the potential impact of each.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap center">
+    <div class="sec-label">The offer</div>
+    <h2>The Micro Audit</h2>
+    <p class="sec-sub" style="margin-left:auto;margin-right:auto;">For business owners, agencies, founders, and local businesses that suspect they're losing hours to work a system should be doing.</p>
+
+    <div class="duo">
+      <div class="card">
+        <div class="panel-tag">During the 60-minute session</div>
+        <h3>We review</h3>
+        <ul>
+          <li>How work actually gets done day to day</li>
+          <li>Customer and lead handling</li>
+          <li>Your follow-up process</li>
+          <li>Repetitive, manual work</li>
+          <li>Current tools and processes</li>
+          <li>Where AI and automation could realistically help</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="panel-tag">After the session</div>
+        <h3>You receive in writing</h3>
+        <ul>
+          <li>Prioritized opportunities</li>
+          <li>Recommended first actions</li>
+          <li>Quick wins you can apply right away</li>
+          <li>Suggested areas for automation</li>
+          <li>A practical next-step roadmap</li>
+        </ul>
+      </div>
+    </div>
+    <p class="duo-note">The roadmap is a clear, actionable written summary — not a 50-page consulting report.</p>
+
+    <div class="offer">
+      <div class="tag">TRL Entry — Micro Audit</div>
+      <div class="price">$35 <small>/ PKR 9,900 · one-time</small></div>
+      <ul>
+        <li>60-minute business analysis session</li>
+        <li>Bottleneck identification across time, leads, and follow-up</li>
+        <li>Prioritized automation opportunities with recommended first actions</li>
+        <li>Quick wins you can apply immediately</li>
+        <li>Written roadmap delivered after the session</li>
+        <li>No fake metrics. Real analysis only.</li>
+        <li class="dim">No implementation included at this tier</li>
+        <li class="dim">No obligation to buy anything further</li>
+      </ul>
+      <a class="btn btn-primary" data-cta style="width:100%;text-align:center;" href="/cdn-cgi/l/email-protection#a3d1c2d0cbcac7ced6cbc2cecec2c7c2cecad1e3c4cec2cacf8dc0ccce9cd0d6c1c9c6c0d79ef7f1ef869193eecac0d1cc869193e2d6c7cad7869193c1ccccc8cacdc4">Request the Micro Audit</a>
+    </div>
+    <p class="delivered">Every audit is delivered personally by <strong>Rashid Muhammad</strong>, founder of TRL — not outsourced, not automated away.</p>
+    <div class="founder">
+      <strong>Founding Business Program:</strong> the first 10 businesses receive the current founding offer in exchange for honest feedback and, where agreed, permission to document the engagement. That's it — no countdowns, no artificial urgency.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-label center">Straight answers</div>
+    <h2 class="center">The questions a smart customer asks</h2>
+    <p class="sec-sub center" style="margin-left:auto;margin-right:auto;">Honest answers are part of the product.</p>
+    <div class="faq">
+      <details>
+        <summary>Is this a sales pitch?</summary>
+        <p>No. It's a working session. You pay for the analysis and the roadmap; implementation is a separate service, and there is zero obligation to buy it. If you take the roadmap and do everything yourself, it still works — that's the point of it.</p>
+      </details>
+      <details>
+        <summary>Do you promise specific results or numbers?</summary>
+        <p>No, and anyone who does should make you careful. We don't use fake metrics or "guaranteed 10x" claims. You get a specific analysis of your business and honest prioritization. If a piece of automation isn't worth doing for your situation, we'll tell you not to do it.</p>
+      </details>
+      <details>
+        <summary>My business is small. Is this worth it?</summary>
+        <p>Small businesses are exactly who this is built for — if you personally handle replies, follow-ups, and daily operations, that's usually where the lost hours hide. If your business already has dedicated teams and mature systems, this audit is less urgent for you, and we'd rather tell you that than sell to you.</p>
+      </details>
+      <details>
+        <summary>What exactly is NOT included?</summary>
+        <p>Implementation. The Micro Audit is analysis and planning only — we show you what to automate and its potential impact; building the systems is our Builder tier, quoted separately if you want it. No surprise invoices, no hidden scope.</p>
+      </details>
+      <details>
+        <summary>What happens after I request a slot?</summary>
+        <p>You message us, we agree on a time, and payment is handled directly and personally when your slot is confirmed — we'll agree on a payment method that works for you. There is no automated checkout, and nothing is charged before we've spoken. Before the call you get a short preparation checklist so the hour is spent on your actual business — not small talk.</p>
+      </details>
+    </div>
+    <div class="center" style="margin-top:40px;">
+      <a class="btn btn-primary" data-cta href="/cdn-cgi/l/email-protection#d9abb8aab1b0bdb4acb1b8b4b4b8bdb8b4b0ab99beb4b8b0b5f7bab6b4e6aaacbbb3bcbaade48d8b95fcebe994b0baabb6fcebe998acbdb0adfcebe9bbb6b6b2b0b7be">Request the Micro Audit — $35</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#">
+          <div class="mark">T<span>R</span>L</div>
+          <div class="sub">The Right Lifestyle</div>
+        </a>
+        <p>We don't sell AI tools. We build business systems that give owners their time back.</p>
+      </div>
+      <div class="foot-contact">
+        <strong style="color:var(--text);display:block;margin-bottom:8px;">Contact</strong>
+        <a data-cta href="/cdn-cgi/l/email-protection#e49685978c8d8089918c858989858085898d96a48389858d88ca878b89db9791868e818790d9b0b6a8c1d6d4a98d87968bc1d6d4a591808d90c1d6d4868b8b8f8d8a83">WhatsApp / Request the Audit</a>
+        <a href="/cdn-cgi/l/email-protection#8af8ebf9e2e3eee7ffe2ebe7e7ebeeebe7e3f8caede7ebe3e6a4e9e5e7"><span class="__cf_email__" data-cfemail="dba9baa8b3b2bfb6aeb3bab6b6babfbab6b2a99bbcb6bab2b7f5b8b4b6">[email&#160;protected]</span></a>
+        <a href="https://instagram.com/the.right.lifestyle" rel="noopener">Instagram — @the.right.lifestyle</a>
+        <a href="https://tiktok.com/@the.right.lifestyle" rel="noopener">TikTok — @the.right.lifestyle</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 TRL — The Right Lifestyle. All rights reserved.</span>
+      <span>Learn → Build → Automate → Grow</span>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Wire every contact button from the single CONFIG block at the top.
+  // WhatsApp filled → all CTAs go to WhatsApp. Empty → all CTAs go to email.
+  (function () {
+    var digits = (TRL_CONTACT.whatsappNumber || "").replace(/\D/g, "");
+    var filled = digits.length >= 8;
+    var target = filled
+      ? "https://wa.me/" + digits + "?text=" + encodeURIComponent(TRL_CONTACT.whatsappMessage)
+      : "mailto:" + TRL_CONTACT.email + "?subject=" + encodeURIComponent("TRL Micro Audit — booking") + "&body=" + encodeURIComponent(TRL_CONTACT.whatsappMessage);
+    document.querySelectorAll("[data-cta]").forEach(function (a) { a.href = target; });
+  })();
+</script>
+
+</body>
+</html>
